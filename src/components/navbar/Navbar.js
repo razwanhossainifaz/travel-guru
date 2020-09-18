@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Navbar.css'
-import { Button, Container, Form, FormControl, InputGroup, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../images/Logo.png';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
