@@ -1,0 +1,27 @@
+.placeName {
+    font-size: 44px;
+    font-weight: bold;
+}
+.photo {
+    width: 100%;
+    border: 8px solid blueviolet;
+    border-radius: 20px;
+}
+.small{
+    font-weight: bold;
+    border: none;
+}
+.small:active {
+    transform: scale(0.98);
+}
+@media screen and (max-width: 576px) {
+    .placeName{
+        font-size: 30px;
+    }
+    .photo {
+        display: none;
+    }
+    .small{
+        padding: 10px;
+    }
+}
