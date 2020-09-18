@@ -63,8 +63,8 @@ const Destination = () => {
                                 <Button disabled={disable} variant="warning" type="submit" className="btn-large btn-block">
                                     {
                                         disable ?
-                                        'Booking cannot be done for less then 1 day' :
-                                        `Book For ${totalDays} Days`
+                                        'Please select your desired date' :
+                                        `Book Hotels`
                                     }
                                 </Button>
                             </Link>

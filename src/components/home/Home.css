@@ -4,8 +4,11 @@
 }
 .photo {
     width: 100%;
-    border: 8px solid blueviolet;
-    border-radius: 20px;
+    border-radius: 25px;
+}
+.photo:hover{
+    border: 4px solid #FBBC04;
+    transition: 0.10s;
 }
 .small{
     font-weight: bold;
@@ -13,6 +16,20 @@
 }
 .small:active {
     transform: scale(0.98);
+}
+.btn-style{
+    background-color: #F9A51A !important;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-style:hover{
+    background-color: #EB390A;
+    transition: 0.20s;
+    color: white;
 }
 @media screen and (max-width: 576px) {
     .placeName{

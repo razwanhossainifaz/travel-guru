@@ -6,8 +6,8 @@ import { Button, Container, Form, FormControl } from 'react-bootstrap';
 import firebaseConfig from './firebase.config';
 import { useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../App';
-import google from './google.png';
-import fb from './fb.png';
+import google from '../../images/Icon/google.png';
+import fb from '../../images/Icon/fb.png';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -160,9 +160,9 @@ const Login = () => {
 
     return (
         <Container className="text-center text-white">
-            <div className="mx-auto bg-info p-3 rounded" id="login">
+            <div className="mx-auto login-style p-3 rounded" id="login">
                 <Form onSubmit={subForm}>
-                    <h3 className="my-4">{newUser ? 'Create Account' : 'User Login'}</h3>
+                    <h3 className="my-4">{newUser ? 'Create A New Account' : 'User Login'}</h3>
                     {
                         newUser && <FormControl onBlur={handleBlur} name="name" type="text" placeholder="Your Name" className="my-3 bg-light" required />
                     }
@@ -175,7 +175,7 @@ const Login = () => {
                         newUser && <FormControl onBlur={handleBlur}  type="password" name="confirm" placeholder="Confirm Password" className="my-3 bg-light" required />
                     }
 
-                    <button className="btn-warning btn-sm" type="submit">{newUser ? 'Sign Up' : 'Login'}</button>
+                    <button className="btn-warning btn-sm login-btn-style" type="submit">{newUser ? 'Sign Up' : 'Login'}</button>
 
                     {
                         !newUser && <span onClick={forgotPass} className="btn text-warning"> <strong>Forgot Password </strong> </span>
@@ -193,8 +193,8 @@ const Login = () => {
                     }}>
                         {
                             newUser ?
-                            'I already have an account' :
-                            'I am new here'
+                            'Already have an account?' :
+                            'Sign up for new user'
                         }
                     </span>
 

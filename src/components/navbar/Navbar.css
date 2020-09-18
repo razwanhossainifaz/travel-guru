@@ -1,9 +1,15 @@
 #nav {
-    background-color: cyan;
     color: white;
 }
-#nav img{
-    /* background-color: yellow !important; */
-    padding: 5px;
-    
+.logo-style{
+    background-color: aliceblue;
+}
+.search-style{
+    width: 400px !important;
+    height: 40px;
+}
+.nav-style{
+    color: yellow !important;
+    margin-left: 600px;
+    font-size: 30px;
 }

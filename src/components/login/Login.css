@@ -5,3 +5,14 @@
     width: 25px;
     margin: 0 10px 2px 0;
 }
+.login-style{
+    color: white;
+}
+.login-btn-style{
+    padding-top: 5px;
+    padding-right: 80px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    color: black;
+    font-weight: 800;
+}

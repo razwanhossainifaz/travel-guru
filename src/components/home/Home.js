@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import {  Col, Container, Row } from 'react-bootstrap';
+import {  Button, Col, Container, Row } from 'react-bootstrap';
 import './Home.css';
 import fakeData from '../../FakeData/FakeData';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Fab from '@material-ui/core/Fab';
 
 const Home = () => {
     const places = fakeData;
@@ -17,13 +16,13 @@ const Home = () => {
             <Container>
                 <Row className="pb-5">
                 <Col lg={4} className="text-center text-lg-left">
-                        <h1 className="placeName my-3">{showPlace.name}</h1>
-                        <p className="text-justify">{showPlace.shortDesc}</p>
-                        <Link to={"/destination/" + showPlace.name}>
-                            <Fab variant="extended" size="medium" color="primary" aria-label="add"> <strong> Book Here </strong> <FontAwesomeIcon icon={faArrowRight} /> </Fab>
-                        </Link>
-                    </Col>
-                    <Col lg={8}>
+                    <h1 className="placeName my-3">{showPlace.name}</h1>
+                    <p className="text-justify">{showPlace.shortDesc}</p>
+                    <Link to={"/destination/" + showPlace.name}>
+                        <Button className="btn-style"> <strong> Booking </strong> <FontAwesomeIcon icon={faArrowRight} /> </Button>
+                    </Link>
+                </Col>
+                <Col lg={8}>
                         <Row>
                             {
                                 places.map(place =>
@@ -37,7 +36,6 @@ const Home = () => {
                         </Row>
                     </Col>
                 </Row>
-                <h1 className="placeName text-center pb-5 mb-0 mt-5"> Travel Guru..... <br/> Your Most Reliable Travelling Partner.... </h1>
             </Container>
         </section>
         
